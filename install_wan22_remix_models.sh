@@ -32,17 +32,43 @@ echo "=== CLIP Vision (2GB) ==="
 wget -O /workspace/ComfyUI/models/clip_vision/clip_vision_h.safetensors \
 "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors?download=true"
 
-echo "=== LoRA: Throat V3 High ==="
+mkdir -p /workspace/ComfyUI/models/loras/Wan/Remix
+mkdir -p /workspace/ComfyUI/models/loras/Wan/Wan2.1
+
+echo "=== LoRA: NSFW-22-H-e8 (614MB) ==="
+wget -O /workspace/ComfyUI/models/loras/Wan/Remix/NSFW-22-H-e8.safetensors \
+"https://huggingface.co/borisf/wan2.2-loras/resolve/main/NSFW-22-H-e8.safetensors?download=true"
+
+echo "=== LoRA: NSFW-22-L-e8 (614MB) ==="
+wget -O /workspace/ComfyUI/models/loras/Wan/Remix/NSFW-22-L-e8.safetensors \
+"https://huggingface.co/borisf/wan2.2-loras/resolve/main/NSFW-22-L-e8.safetensors?download=true"
+
+echo "=== LoRA: SmoothMixAnimation High (307MB) ==="
+wget -O /workspace/ComfyUI/models/loras/Wan/Remix/SmoothMixAnimation_High.safetensors \
+"https://huggingface.co/borisf/wan2.2-loras/resolve/main/SmoothMixAnimation_High.safetensors?download=true"
+
+echo "=== LoRA: SmoothMixAnimation Low (307MB) ==="
+wget -O /workspace/ComfyUI/models/loras/Wan/Remix/SmoothMixAnimation_Low.safetensors \
+"https://huggingface.co/borisf/wan2.2-loras/resolve/main/SmoothMixAnimation_Low.safetensors?download=true"
+
+echo "=== LoRA: Lera Fox Wan2.1 (307MB) ==="
+wget -O /workspace/ComfyUI/models/loras/Wan/Wan2.1/Wan2.1_lera_or.safetensors \
+"https://huggingface.co/borisf/wan2.2-loras/resolve/main/Wan2.1_lera_or.safetensors?download=true"
+
+echo "=== LoRA: Throat V3 High (307MB) ==="
 wget -O /workspace/ComfyUI/models/loras/Wan/Remix/Wan22_ThroatV3_High.safetensors \
 "https://huggingface.co/borisf/wan2.2-loras/resolve/main/Wan22_ThroatV3_High.safetensors?download=true"
 
-echo "=== LoRA: Throat V3 Low ==="
+echo "=== LoRA: Throat V3 Low (307MB) ==="
 wget -O /workspace/ComfyUI/models/loras/Wan/Remix/Wan22_ThroatV3_Low.safetensors \
 "https://huggingface.co/borisf/wan2.2-loras/resolve/main/Wan22_ThroatV3_Low.safetensors?download=true"
 
-echo "=== LoRA: Lera Fox Wan2.1 ==="
-mkdir -p /workspace/ComfyUI/models/loras/Wan/Wan2.1
-wget -O /workspace/ComfyUI/models/loras/Wan/Wan2.1/Wan2.1_lera_or.safetensors \
-"https://huggingface.co/borisf/wan2.2-loras/resolve/main/Wan2.1_lera_or.safetensors?download=true"
+echo "=== LoRA: r3v3rs3 High i2v (614MB) ==="
+wget -O /workspace/ComfyUI/models/loras/Wan/Remix/wan22.r3v3rs3_c0wg1rl-14b-High-i2v_e70.safetensors \
+"https://huggingface.co/borisf/wan2.2-loras/resolve/main/wan22.r3v3rs3_c0wg1rl-14b-High-i2v_e70.safetensors?download=true"
+
+echo "=== LoRA: r3v3rs3 Low i2v (614MB) ==="
+wget -O /workspace/ComfyUI/models/loras/Wan/Remix/wan22.r3v3rs3_c0wg1rl-14b-Low-i2v_e70.safetensors \
+"https://huggingface.co/borisf/wan2.2-loras/resolve/main/wan22.r3v3rs3_c0wg1rl-14b-Low-i2v_e70.safetensors?download=true"
 
 echo "=== Все модели Wan2.2 Remix загружены! ==="
